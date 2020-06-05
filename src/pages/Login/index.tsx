@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, Content, Form, NoAccount, ContainerStyle } from './styles';
 import { FiMail, FiLock } from 'react-icons/fi';
 import { GoMarkGithub } from 'react-icons/go';
+import { Link } from 'react-router-dom';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
@@ -21,7 +22,7 @@ const Login = () => {
           <a href="#">Esqueci minha senha</a>
           <Button description="Entrar" />
           <NoAccount>
-            Não tem uma conta? <a href="#">Registre-se</a>
+            Não tem uma conta? <Link to="/signup">Registre-se</Link>
           </NoAccount>
           <ContainerStyle>ou</ContainerStyle>
           <Button description="Github" icon={GoMarkGithub} />
