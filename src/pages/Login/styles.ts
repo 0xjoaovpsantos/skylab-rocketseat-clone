@@ -49,19 +49,6 @@ export const NoAccount = styled.div`
   color: #cccccc;
 `;
 
-export const Footer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 12px;
-  color: #44434b;
-  margin-top: 40px;
-
-  > small:first-child {
-    padding-bottom: 10px;
-  }
-`;
-
 export const ContainerStyle = styled.div`
   position: relative;
   font-size: 12px;

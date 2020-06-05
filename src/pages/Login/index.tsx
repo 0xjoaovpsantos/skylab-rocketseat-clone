@@ -1,18 +1,12 @@
 import React from 'react';
 
-import {
-  Container,
-  Content,
-  Form,
-  NoAccount,
-  Footer,
-  ContainerStyle,
-} from './styles';
+import { Container, Content, Form, NoAccount, ContainerStyle } from './styles';
 import { FiMail, FiLock } from 'react-icons/fi';
 import { GoMarkGithub } from 'react-icons/go';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
+import Footer from '../../components/Footer';
 
 import skylabImg from '../../assets/login/skylab_img.svg';
 
@@ -32,10 +26,7 @@ const Login = () => {
           <ContainerStyle>ou</ContainerStyle>
           <Button description="Github" icon={GoMarkGithub} />
         </Form>
-        <Footer>
-          <small>Skylab versão 1.1.02</small>
-          <small>Rocketseat 2020 © Todos os direitos reservados</small>
-        </Footer>
+        <Footer />
       </Content>
     </Container>
   );
