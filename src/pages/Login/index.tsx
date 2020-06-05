@@ -21,7 +21,9 @@ const Login = () => {
           <Input Icon={FiMail} description="E-mail" />
           <Input Icon={FiLock} description="Senha" />
           <a href="#">Esqueci minha senha</a>
-          <Button description="Entrar" />
+          <Link to="/dashboard">
+            <Button description="Entrar" />
+          </Link>
           <NoAccount>
             Não tem uma conta? <Link to="/signup">Registre-se</Link>
           </NoAccount>
