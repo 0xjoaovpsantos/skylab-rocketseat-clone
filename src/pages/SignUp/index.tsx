@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { FiMail, FiUser, FiLock } from 'react-icons/fi';
-import { Container } from './styles';
 
 import { Link } from 'react-router-dom';
 

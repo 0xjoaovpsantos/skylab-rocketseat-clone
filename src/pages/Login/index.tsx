@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { Container, Content, Form, NoAccount, ContainerStyle } from './styles';
+import { Content, Form, NoAccount, ContainerStyle } from './styles';
 import { FiMail, FiLock } from 'react-icons/fi';
 import { GoMarkGithub } from 'react-icons/go';
 import { Link } from 'react-router-dom';
 
+import BackgroundImg from '../../components/BackgroundImg';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 import Footer from '../../components/Footer';
@@ -13,7 +14,7 @@ import skylabImg from '../../assets/login/skylab_img.svg';
 
 const Login = () => {
   return (
-    <Container>
+    <BackgroundImg>
       <Content>
         <img src={skylabImg} alt="Login Skylab - Rocketseat" />
         <Form>
@@ -29,7 +30,7 @@ const Login = () => {
         </Form>
         <Footer />
       </Content>
-    </Container>
+    </BackgroundImg>
   );
 };
 
