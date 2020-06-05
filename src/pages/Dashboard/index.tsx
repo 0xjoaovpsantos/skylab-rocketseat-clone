@@ -4,47 +4,44 @@ import starterCursosImg from '../../assets/dashboard/rocket_purple.svg';
 import launchBaseImg from '../../assets/dashboard/rocket_launchbase.svg';
 import gostackImg from '../../assets/dashboard/rocket_gostack.svg';
 
+import { Content } from './styles';
+
 import Header from '../../components/Header';
 import BackgroundImg from '../../components/BackgroundImg';
+import CardCourse from '../../components/CardCourse';
 
 const Dashboard: React.FC = () => {
   return (
     <BackgroundImg>
       <Header />
-      <div>
+      <Content>
         <div>
-          <div>
-            <span>01</span>
-            <div>
-              <img src={starterCursosImg} alt="Starter Cursos" />
-            </div>
-            <p>
-              <strong>Torne-se um programador desejado</strong> no mercado com
-              esses cursos gratuitos
-            </p>
-          </div>
-          <div>
-            <span>02</span>
-            <div>
-              <img src={launchBaseImg} alt="LaunchBase" />
-            </div>
-            <p>
-              <strong>Domine programação do zero</strong> e tenha acesso às
-              melhores oportunidades do mercado
-            </p>
-          </div>
-          <div>
-            <span>03</span>
-            <div>
-              <img src={gostackImg} alt="GoStack" />
-            </div>
-            <p>
-              <strong>Treinamento imersivo</strong> nas tecnologias mais
-              modernas de desenvolvimento web e mobile
-            </p>
-          </div>
+          <CardCourse
+            number="01"
+            logo={starterCursosImg}
+            description_highlighted="Torne-se um programador desejado"
+            description_not_highlighted="no mercado com esses
+        cursos gratuitos"
+            color_theme="#7159c1"
+          />
+          <CardCourse
+            number="02"
+            logo={launchBaseImg}
+            description_highlighted="Domine programação do zero"
+            description_not_highlighted="e tenha acesso às
+            melhores oportunidades do mercado"
+            color_theme="#FD951F"
+          />
+          <CardCourse
+            number="03"
+            logo={gostackImg}
+            description_highlighted="Treinamento imersivo"
+            description_not_highlighted="nas tecnologias mais
+            modernas de desenvolvimento web e mobile"
+            color_theme="#04D361"
+          />
         </div>
-      </div>
+      </Content>
     </BackgroundImg>
   );
 };

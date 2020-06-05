@@ -1,30 +1,35 @@
 import React from 'react';
 
+import { Container, Content, UserInformation, Notifications } from './styles';
+
 import rocketImg from '../../assets/dashboard/rocket.svg';
 import photoUser from '../../assets/dashboard/photo_user.jpg';
 
-import { FiBell } from 'react-icons/fi';
+import { FaBell } from 'react-icons/fa';
 
 const Header: React.FC = () => {
   return (
-    <header>
-      <div>
-        <img src={rocketImg} alt="Logo Rocketseat" />
-        Rocketseat
-      </div>
-      <div>
+    <Container>
+      <Content>
         <div>
-          <FiBell />
+          <img src={rocketImg} alt="Logo Rocketseat" />
         </div>
         <div>
-          <span>João Victor Pereira Santos</span>{' '}
-          <span>joaovictorsantoscpv@gmail.com</span>
+          <Notifications>
+            <FaBell />
+          </Notifications>
+          <UserInformation>
+            <div>
+              <span>João Victor Pereira Santos</span>
+              <span>joaovictorsantoscpv@gmail.com</span>
+            </div>
+            <div>
+              <img src={photoUser} alt="Foto usuário" />
+            </div>
+          </UserInformation>
         </div>
-        <div>
-          <img src={photoUser} alt="Foto usuário" />
-        </div>
-      </div>
-    </header>
+      </Content>
+    </Container>
   );
 };
 
