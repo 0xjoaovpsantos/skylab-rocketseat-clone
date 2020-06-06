@@ -8,6 +8,11 @@ export const Container = styled.header`
   position: fixed;
   padding: 0px 30px;
   background: #111116;
+
+  @media only screen and (max-width: 770) {
+    height: 60px;
+    padding: 0px 20px;
+  }
 `;
 
 export const Content = styled.div`

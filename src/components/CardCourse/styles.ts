@@ -16,8 +16,19 @@ export const Container = styled.div<ContainerProps>`
   border-width: 2px;
   border-style: solid;
   border-color: #0b0a0d;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: translateY(-10px);
+    border-color: ${(props) => props.color_theme};
+  }
 
   background: url(${backgroundImg}) 0% 0% / cover;
+
+  @media only screen and (max-width: 1120px) {
+    background-position: center bottom;
+    padding: 48px;
+  }
 
   span {
     width: 48px;
@@ -37,14 +48,31 @@ export const Container = styled.div<ContainerProps>`
   div {
     height: 145px;
     margin: 105px 0px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 1120px) {
+      margin: 50px 0px 20px;
+
+      img {
+        width: 90%;
+      }
+    }
   }
 
   p {
     text-align: center;
     color: #87868b;
+    text-align: center;
 
     strong {
       color: ${(props) => props.color_theme};
+    }
+
+    @media only screen and (max-width: 1120px) {
+      max-width: 270px;
+      line-height: 26px;
     }
   }
 `;

@@ -8,5 +8,9 @@ export const Content = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 24px;
+
+    @media only screen and (max-width: 1120px) {
+      grid-template-columns: 1fr;
+    }
   }
 `;
